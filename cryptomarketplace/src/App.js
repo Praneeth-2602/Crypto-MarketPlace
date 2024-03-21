@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from './components/navbar'; // Fix the casing of the file name
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import {
   BrowserRouter as Router,
   Routes,

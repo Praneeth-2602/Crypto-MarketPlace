@@ -1,0 +1,87 @@
+:root {
+    --black: #000;
+    --white: #ffffff;
+    --lightgrey: #f1f1f1;
+    --darkblue: #0d102c;
+    --primarycolor: #3d51f2;
+    --secondarycolor: #5670ef;
+    --lightDark: #080A25;
+    --darkText: #8388B4;
+}
+
+.marketDesc {
+    order: 0;
+}
+
+.eachMarket {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.eachMarket img {
+    margin-right: 2em;
+}
+
+.marketTitle {
+    color: var(--white);
+    margin-bottom: 1em;
+}
+
+.marketspicSection {
+    background-color: var(--lightgrey);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.marketspicHeader {
+    color: var(--darkblue);
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.marketsPicContainer {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 1em;
+    margin: auto;
+}
+
+.marketPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.marketPic1 {
+    background-color: #FC9531;
+}
+
+.marketPic2 {
+    background-color: #4990FF;
+}
+
+.marketPic3 {
+    background-color: #3EC2F1;
+}
+
+.marketPic4 {
+    background-color: #50D79F;
+}
+
+.marketPic img {
+    width: 50px;
+}
+
+.marketTitle {
+    color: var(--white);
+    font-weight: bold;
+    margin-top: .5em;
+    text-transform: uppercase;
+}
