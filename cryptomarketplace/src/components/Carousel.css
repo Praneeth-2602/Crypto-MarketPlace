@@ -9,6 +9,13 @@
   --darkText: #8388B4;
 }
 
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d102c;
+  color: var(--white);
+
+}
+
 .carouselContainer {
     display: grid;
     gap: 10px;
