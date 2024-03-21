@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Navbar from './components/navbar'; // Fix the casing of the file name
+import Home from './screens/Home.jsx';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import {
@@ -15,7 +15,9 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<Navbar />} />
+          <Route path="/" element={<Home/>} />
+         
+          
         </Routes>
       </div>
     </Router>
