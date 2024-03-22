@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Home from './screens/Home.jsx';
+import ContactUs from './screens/ContactUs.jsx';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import {
@@ -17,6 +18,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>
     </Router>
