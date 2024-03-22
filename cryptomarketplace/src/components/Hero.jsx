@@ -1,13 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import img from '../assets/hero-image.png';
+import './Hero.css';
 
 const Hero = () => {
   return (
     <div className="container col-xxl-8 px-4 py-5">
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div className="col-10 col-sm-8 col-lg-6">
-          <img src={img}/>
+          <img src={img} height={'680px'}/>
         </div>
         <div className="col-lg-6">
           <h1 className="display-5 fw-bold lh-1 mb-3" style={{color: 'white'}}>Most popular way to trade</h1>
