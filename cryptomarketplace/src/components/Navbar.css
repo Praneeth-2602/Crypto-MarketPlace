@@ -1,3 +1,14 @@
+:root {
+  --black: #000;
+  --white: #ffffff;
+  --lightgrey: #f1f1f1;
+  --darkblue: #0d102c;
+  --primarycolor: #3d51f2;
+  --secondarycolor: #5670ef;
+  --lightDark: #080A25;
+  --darkText: #8388B4;
+}
+
 nav {
     padding: 20px;
     display: flex;
@@ -9,7 +20,8 @@ nav {
   
   nav h1 {
     color: white;
-    font-size: 24px;
+    font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 10px;
   }
   
@@ -17,18 +29,64 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-right: 10px;
   }
   
   nav li {
     display: inline-block;
     margin-right: 10px;
+    padding: 15px;
   }
   
   nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
   }
   
   nav a:hover {
     text-decoration: underline;
+  }
+
+  .login{
+    padding: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+
+  .login:hover{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(246, 242, 242, 0.3);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .signup{
+    padding: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: var(--white);
+    color: #000;
+  }
+
+  .signup:hover{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(246, 242, 242, 0.3);
+    transition: all 0.2s ease-in-out;
   }
