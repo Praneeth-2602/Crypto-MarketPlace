@@ -67,6 +67,11 @@ nav {
     cursor: pointer;
     box-shadow: 5px 5px 20px rgba(246, 242, 242, 0.3);
     transition: all 0.2s ease-in-out;
+    background: var(--white);
+  }
+
+  .login:hover a{
+    color: var(--lightDark);
   }
 
   .signup{
@@ -81,6 +86,10 @@ nav {
     color: #000;
   }
 
+  .signup a{
+    color: var(--lightDark);
+  }
+
   .signup:hover{
     border: 1px solid #fff;
     border-radius: 50px;
@@ -89,4 +98,10 @@ nav {
     cursor: pointer;
     box-shadow: 5px 5px 20px rgba(246, 242, 242, 0.3);
     transition: all 0.2s ease-in-out;
+    background: none;
   }
+
+  .signup:hover a{
+    color: var(--white);
+  }
+
