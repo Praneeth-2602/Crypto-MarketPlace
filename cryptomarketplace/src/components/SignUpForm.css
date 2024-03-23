@@ -1,19 +1,19 @@
 /* LoginForm.css */
-.login-form{
+.signup-form{
     text-align: center;
 /* From https://css.glass */
-background: rgba(255, 255, 255, 0.15);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(19.6px);
--webkit-backdrop-filter: blur(19.6px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 50px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 100px;
     top: 100px;
-    width: 475px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
 
 }
 
@@ -51,6 +51,39 @@ input {
     color: var(--white);
 }
 
+.form-group .underline{
+    position: relative;
+}
+
+form .underline::before{
+    content: '';
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;    
+}
+
+form .underline::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(#141e30, #528dd0);
+    left: 0;
+    bottom: 0;  
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+form input:focus ~ .underline::after,
+form input:valid ~ .underline::after{    
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 button{
     padding: 20px;
     padding-top: 7px;
@@ -74,35 +107,3 @@ button:hover{
 button:hover a{
     color: var(--lightDark);
   }
-
-form div .underline{
-    position: relative;
-}
-
-form div .underline::after{
-    content: '';
-    height: 3px;
-    width: 100%;
-    background: linear-gradient(#141e30, #528dd0);
-    left: 0;
-    bottom: 0;  
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all 0.3s ease;
-}
-
-form div .underline::before{
-    content: '';
-    position: relative;
-    height: 2px;
-    width: 100%;
-    background: #ccc;
-    left: 0;
-    bottom: 0;    
-}
-
-form div input:focus ~ .underline::after,
-form div input:valid ~ .underline::after{    
-    transform: scaleX(1);
-    transform-origin: left;
-}
