@@ -1,0 +1,99 @@
+/* LoginForm.css */
+.login-form{
+    text-align: center;
+/* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 50px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px;
+    top: 100px;
+    width: 400px;
+    height: 500px;
+
+}
+
+div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.underline{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;    
+}
+
+.underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #99004D 0%, #ff0080 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus ~ .underline::after,
+.input-box input:valid ~ .underline::after{    
+    transform: scaleX(1);
+    transform-origin: left;
+}
